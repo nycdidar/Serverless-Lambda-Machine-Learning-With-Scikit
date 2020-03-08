@@ -1,0 +1,46 @@
+service: machine-learning-python
+#app: your-app-name
+#tenant: your-tenant-name
+
+provider:
+  name: aws
+  runtime: python3.7
+  #memorySize: 512 # optional, in MB, default is 1024
+  timeout: 30 # optional, in seconds, default is 6
+  region: us-east-1
+  environment:
+    ACCESS_KEY: ''
+    SECRET_KEY: ''
+
+package:
+  exclude:
+    - node_modules/**
+    - .git/**
+    - .serverless
+    - a/** # virtualenv
+    - .ipynb_checkpoints/
+    #- data/iris.csv
+
+functions:
+  webapi:
+    handler: api.handler
+    events:
+      - http: 'ANY {proxy+}'
+      - http:
+          path: /
+          method: any
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+            allowCredentials: false
+            cacheControl: 'max-age=600, s-maxage=600, proxy-revalidate' # Caches on browser and proxy for 10 minutes and doesnt allow proxy to serve out of date content
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+    zip: true 
+
+plugins:
+  - serverless-python-requirements
