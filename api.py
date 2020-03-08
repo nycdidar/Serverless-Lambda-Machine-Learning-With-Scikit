@@ -1,10 +1,8 @@
 import json
 import re
 import os
-
 import urllib
 
-#https://www.dataquest.io/blog/sci-kit-learn-tutorial/
 
 ## YOU MAY HAVE TO RUN IT FEW TIMES LOCALLY TO EXECUTE
 # this helps us use zipped dependencies on Lambdas,
