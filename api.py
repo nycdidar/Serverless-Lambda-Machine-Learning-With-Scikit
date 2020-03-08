@@ -3,7 +3,6 @@ import re
 import os
 import urllib
 
-
 ## YOU MAY HAVE TO RUN IT FEW TIMES LOCALLY TO EXECUTE
 # this helps us use zipped dependencies on Lambdas,
 # to work around numpy/scipy size requirements
@@ -22,7 +21,6 @@ except ImportError:
 
 import pickle
 import pandas as pd
-
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -75,7 +73,6 @@ def classify(column, input_data):
     }
     return switcher.get(result, "nothing")
 
-
 def handler(event, context):
   body_data = GetPostData(event['body'])
   resultObject = {
@@ -85,4 +82,3 @@ def handler(event, context):
 
   result = json.dumps(resultObject)
   return {"statusCode": 200, "body": result}
-
