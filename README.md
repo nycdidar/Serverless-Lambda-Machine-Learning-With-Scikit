@@ -1,4 +1,4 @@
-# Serverless(Lamba) Machine Learning With Scikit 
+# Serverless(Lambda) Machine Learning With Scikit
 Serverless(Lamba) Machine Learning With Scikit
 
 ##### Installation steps
