@@ -5,7 +5,7 @@ Serverless(Lambda) Machine Learning With Scikit
 * Go to https://console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
 * Create `New Access Key`
 * Clone this repo.
-* `cd Serverless-Lamba-Scikit-Machine-Learning`
+* `cd Serverless(Lambda) Machine Learning With Scikit`
 * RUN `serverless config credentials --provider aws --key YOUR_KEY --secret YOUR_SECRET`
 * RUN ` sls plugin install -n serverless-python-requirements` 
 
