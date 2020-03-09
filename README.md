@@ -15,3 +15,5 @@ Serverless(Lambda) Machine Learning With Scikit
 * Test prediction `curl 'https://wbzhw5yw07.execute-api.us-east-1.amazonaws.com/dev/?' --data 'input_data=5.9,3.0,5.1,1.8'`
 * To destroy and remove lambda/api `sls remove`.
 
+![Serverless Machine Learning AWS Lambda With Scikit ](resources/1.png "Serverless Machine Learning AWS Lambda With Scikit")
+![Serverless Machine Learning AWS Lambda With Scikit ](resources/2.png "Serverless Machine Learning AWS Lambda With Scikit")
