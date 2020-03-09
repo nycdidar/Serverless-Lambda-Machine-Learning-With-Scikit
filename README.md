@@ -1,5 +1,5 @@
 # Serverless(Lambda) Machine Learning With Scikit
-Serverless(Lamba) Machine Learning With Scikit
+Serverless(Lambda) Machine Learning With Scikit
 
 ##### Installation steps
 * Go to https://console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
